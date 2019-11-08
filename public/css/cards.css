@@ -1,0 +1,238 @@
+.cards-title h1 {
+    font-size: 40px;
+}
+
+.cards {
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.petCard {
+    z-index: 0;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    border-radius: 8px;
+}
+
+.petCard-media {
+    display: block;
+    position: relative;
+}
+
+.petCard-media::before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.petCard-media-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.petCard-body {
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 16px 10px 22px;
+}
+
+.petCard-body::before {
+    content: "";
+    display: block;
+    height: 18px;
+    border-radius: 50% 50% 0 0;
+    position: absolute;
+    bottom: calc(100% - 10px);
+    right: -5px;
+    left: -5px;
+    background-color: #fff;
+}
+
+.petCard-body-details {
+    transition: opacity .1s .05s;
+}
+
+.petCard-overlay {
+    overflow: hidden;
+    padding: 20px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    background-color: #fff;
+    transform: translateY(100%);
+    transition: transform .15s, -webkit-transform .15s;
+}
+
+.petCard:hover .petCard-overlay {
+    transform: translateY(0);
+}
+
+.petCard-overlay>* {
+    opacity: 0;
+    transition: opacity .15s;
+}
+
+.circle-img img {
+    display: block;
+    height: 153px;
+    width: 160px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.circle-for-click-open,
+.circle-for-click-close {
+    outline: none;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 6%;
+    right: 18%;
+    z-index: 2;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: 0 0 4px #c8cbcf;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.circle-for-click-open-img {
+    background-image: url("../images/43817074_479928655826394_8040238980668588032_n.png");
+    background-color: #fff;
+}
+
+.circle-for-click-open-img:hover {
+    background-image: url("../images/43585292_1925643217732277_8605462642531762176_n.png");
+    background-color: #6504b5;
+}
+
+.circle-for-click-close {
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #2e0152;
+    box-shadow: none;
+}
+
+.circle-for-click-close:hover {
+    color: #fff;
+    background-color: #3c016d;
+    box-shadow: none;
+}
+
+.circle-for-click-open:focus,
+.circle-for-click-close:focus {
+    outline: none;
+}
+
+.social-links-icon:not(:first-of-type) {
+    border: 2px solid #fff;
+}
+
+.petCard-second-media {
+    padding: 20px 10px 10px 10px;
+}
+
+.petCard-second-media .fa-times {
+    padding: 7px;
+}
+
+.social-links {
+    margin: 24px 0px;
+}
+
+.social-links-icon,
+.social-link-selected {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 3%;
+}
+
+.social-link-selected {
+    background-color: #2e0152;
+    box-shadow: inset 0 0 0 2px #fff, 0 0 0 2px #20ccf8;
+}
+
+.social-links-icon:not(:first-of-type):hover {
+    box-shadow: inset 0 0 0 transparent, 0 0 0 2px #2e0152;
+    background-color: #2e0152;
+}
+
+.icon-social {
+    width: 20px;
+    height: 20px;
+}
+
+.second-one {
+    display: none;
+    transition: transform .15s, -webkit-transform .15s;
+}
+
+.actionCard {
+    overflow: visible;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(77, 71, 81, .2);
+    background-color: #6504b5;
+    min-height: 1px;
+}
+
+.actionCard-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.actionCard-body {
+    padding: 30px;
+}
+
+.actionCard-body-icon .fas {
+    font-size: 80px;
+}
+
+.actionCard-body p {
+    margin-top: 29px;
+}
+
+.actionCard-footer {
+    align-items: stretch;
+    border-top: 1px solid #2e0152;
+}
+
+.actionCard-footer-cta {
+    overflow: hidden;
+    box-sizing: border-box;
+    min-height: 55px;
+    padding: 10px 18px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.actionCard-overlay:hover~.actionCard-footer .actionCard-footer-cta {
+    background-color: #410078;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,368 @@
+@media only screen and (max-width: 640px) {
+    .navbar-default {
+        background-color: white;
+        margin-bottom: 0px;
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background: transparent;
+    }
+    .navbar-default .navbar-toggle {
+        border: none;
+    }
+    .navbar-brand {
+        padding: 25px 15px;
+    }
+    .navbar-brand span {
+        letter-spacing: 1px;
+    }
+    .navbar-collapse {
+        padding: 0px;
+    }
+    .navbar-nav {
+        padding: 40px 50px 0px 50px;
+        margin: 0px;
+    }
+    .navbar-nav li {
+        margin-bottom: 20px;
+    }
+    .header-inner-profile {
+        background-color: #2e0152;
+        height: 60px;
+    }
+    .header-inner-profile-btn {
+        padding-left: 0px;
+    }
+    .navbar-default .navbar-nav>li>a {
+        color: white;
+    }
+    .user-dropdown .fas {
+        margin-right: 10px;
+    }
+    .user-dropdown li:nth-child(2),
+    .user-dropdown li:nth-child(3),
+    .user-dropdown li:nth-child(4) {
+        margin-left: 25px;
+        margin-bottom: 5px;
+    }
+    .login>* {
+        width: 100%;
+    }
+    .modal-content {
+        display: block;
+    }
+    .login-ft {
+        order: 2;
+    }
+    .login-bd {
+        border-radius: 10px 10px 0px 0px;
+    }
+    .login-bd-inner,
+    .login-ft-inner,
+    .register-bd {
+        max-width: 400px;
+        padding: 60px 20px;
+    }
+    .register-form .form-group,
+    .register-form .register-button {
+        padding-right: 0px;
+    }
+    .content {
+        height: 370px;
+    }
+    .main-title h1 {
+        font-size: 35px;
+        margin-top: -30px;
+    }
+    .main-title p {
+        margin-top: 20px;
+    }
+    .cards-title h1 {
+        font-size: 30px;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: end;
+    }
+    .first-one,
+    .second-one {
+        width: 257px;
+        margin-left: 5px;
+        margin-top: 35px;
+        flex: 0 0 auto;
+    }
+    .actionCard {
+        margin-left: 25px;
+        margin-top: 69px;
+        width: 245px;
+        height: 320px;
+        flex: 0 0 auto;
+    }
+    .actionCard-body {
+        padding: 45px;
+        flex: 0 0 auto;
+    }
+    .findAPetMenu-locationInputContainer:after {
+        content: none;
+    }
+    .planning {
+        padding-bottom: 0px;
+    }
+    .title h1 {
+        font-size: 25px;
+    }
+    .carousel-content img {
+        width: 100px;
+        height: 90px;
+    }
+    .carousel-content h3 {
+        font-size: 18px;
+    }
+    .carousel-content p {
+        font-size: 12px;
+    }
+    .carousel-indicators {
+        margin-bottom: 30px;
+    }
+    .carousel-control .glyphicon-chevron-right {
+        margin-right: -20px;
+    }
+    .carousel-control .glyphicon-chevron-left {
+        margin-left: -20px;
+    }
+    .adoptCarousel .carousel-content {
+        padding: 0px;
+    }
+    .fieldset-change-pass {
+        margin-top: 100px;
+    }
+    .fieldset-title,
+    .fieldset .form-group,
+    .profile-main form {
+        padding-right: 0px;
+    }
+    .user-update-btn {
+        margin-top: 10px;
+    }
+    .footer {
+        padding: 20px;
+        display: block;
+    }
+    .subFooter-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+    }
+    .subFooter-inner-text {
+        order: 2;
+    }
+    .subFooter-inner-social {
+        padding: 10px 0px;
+        border-bottom: 1px solid #6504b5;
+        width: 100%;
+    }
+    .footer-inner-nav-item {
+        border-bottom: 1px solid #2e0152;
+    }
+    .footer-inner-nav-item .btn-group {
+        width: 100%;
+    }
+    .footer-inner-nav-item:first-child {
+        border-top: 1px solid #2e0152;
+    }
+    .footer-inner-nav-item-btn {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 52px;
+        padding: 15px 0;
+    }
+    .footer-inner-nav-item-expanded {
+        background-color: #6504b5;
+        border: none;
+        width: 100%;
+    }
+    .footer-inner-nav-item-expanded>li>a,
+    .footer-inner-nav-item>a {
+        color: white;
+    }
+    .image {
+        height: 30vh;
+    }
+    .petInfo {
+        margin-top: 20px;
+    }
+    .petProfile-main {
+        margin: 0px;
+    }
+    .askAbout {
+        display: none;
+    }
+    .AskAboutPet {
+        display: block;
+    }
+    .petProfileStyle {
+        text-align: center;
+    }
+    #ask_about_pet {
+        margin-top: 20px;
+    }
+    .sendMessage {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .animalSearchHeader {
+        height: auto;
+    }
+    .countPetsDiv {
+        border-right: none;
+        border-bottom: 1px solid #2e0152;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    .desktopMenu-root-list li {
+        font-size: 12px;
+        padding-top: 20px;
+    }
+    .main-title h1 {
+        font-size: 35px;
+    }
+    .findAPetMenu-locationInputContainer:after {
+        content: none;
+    }
+    .user-dropdown {
+        width: 231px;
+    }
+    .planning {
+        padding-bottom: 0px;
+    }
+    .carousel-indicators {
+        bottom: 35px;
+    }
+    .modal-dialog {
+        width: 746px;
+    }
+    .login-bd-inner,
+    .login-ft-inner {
+        padding: 80px 30px 50px;
+    }
+    .findpet:nth-child(3) .button {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .carousel.carousel-slider .carousel-item {
+        width: 500px;
+        top: 30px;
+        left: 30px;
+    }
+    .footer {
+        padding: 30px;
+        display: block;
+    }
+    .newsletter-signup p {
+        font-size: 15px;
+    }
+    .subFooter-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+    }
+    .subFooter-inner-text {
+        order: 2;
+    }
+    .subFooter-inner-social {
+        padding: 10px 0px;
+        border-bottom: 1px solid #6504b5;
+        width: 100%;
+    }
+    .footer-inner-nav-item {
+        border-bottom: 1px solid #2e0152;
+        width: calc(50% - 10px);
+    }
+    .footer-inner-nav-item:nth-child(n+5) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .footer-inner-nav-item:nth-child(5) {
+        border-top: 1px solid #2e0152;
+    }
+    .footer-inner-nav-item:nth-child(6) {
+        top: 54px;
+    }
+    .footer-inner-nav-item:nth-child(7) {
+        top: 107px;
+    }
+    .footer-inner-nav-item:nth-child(8) {
+        top: 160px;
+    }
+    .footer-inner-nav-item .btn-group {
+        width: 100%;
+    }
+    .footer-inner-nav-item:first-child {
+        border-top: 1px solid #2e0152;
+    }
+    .footer-inner-nav-item-btn {
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        height: 52px;
+        padding: 15px 0;
+    }
+    .footer-inner-nav-item-expanded {
+        background-color: #6504b5;
+        border: none;
+        width: 100%;
+    }
+    .footer-inner-nav-item-expanded>li>a,
+    .footer-inner-nav-item>a {
+        color: white;
+    }
+    .askAbout {
+        margin-top: 20px;
+    }
+    .btn-share-pet {
+        padding: 10px 93px;
+    }
+    .sendMessage {
+        margin-top: 20px;
+    }
+    .cards .first-one:nth-child(n+4):not(:last-child) {
+        display: none;
+    }
+    .cards .second-one:nth-child(n+4):not(:last-child) {
+        display: none;
+    }
+    .animalSearchHeader {
+        height: auto;
+    }
+    .countPetsDiv {
+        border-right: none;
+        border-bottom: 1px solid #2e0152;
+    }
+}
+
+@media (min-width: 1024px) {
+    .user-dropdown {
+        width: 230px;
+    }
+    .modal-dialog {
+        width: 924px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .user-dropdown {
+        width: 366px;
+    }
+    .modal-dialog {
+        width: 924px;
+    }
+}

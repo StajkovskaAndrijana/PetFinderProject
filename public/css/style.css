@@ -1,0 +1,1204 @@
+@font-face {
+    src: url('../fonts/Nexa Light.otf');
+    font-family: Nexa Regular;
+}
+
+body {
+    font-family: Nexa Regular, arial, helvetica, sans-serif;
+    background-color: #EFEEF1;
+    font-size: 14px;
+    line-height: 1.6;
+    padding-right: 0px !important;
+    margin-right: 0px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.pl-0 {
+    padding-left: 0px;
+}
+
+.pr-0 {
+    padding-right: 0px;
+}
+
+.purple {
+    color: #6504b5;
+}
+
+.white {
+    color: white;
+}
+
+.bg-purple {
+    background-color: #6504b5;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+}
+
+button:focus,
+button:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.header {
+    display: block;
+    position: relative;
+    z-index: 4;
+    box-shadow: 0 1px 3px rgba(77, 71, 81, .2);
+}
+
+.header-inner,
+.header-inner-main {
+    display: flex;
+}
+
+.header-inner {
+    justify-content: space-between;
+    max-width: 1220px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+.header-inner-main {
+    flex-grow: 1;
+    align-items: center;
+    position: relative;
+}
+
+.header-inner-main-btn {
+    padding-right: 28px;
+    position: relative;
+}
+
+.desktopMenu {
+    display: none;
+    position: absolute;
+    padding: 0 50px;
+    height: 55px;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0 1px 3px rgba(77, 71, 81, .2);
+}
+
+.desktopMenu-root-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: inherit;
+    list-style: none;
+    padding-inline-start: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.desktopMenu-root-list>li {
+    padding-top: 15px;
+}
+
+.header-inner-main-searchBtn {
+    box-sizing: content-box;
+    width: 22px;
+    align-self: stretch;
+    margin-left: auto;
+    padding: 0 20px;
+    border-right: 1px solid #d2d1d3;
+}
+
+.header-inner-main-searchBtn:hover,
+.header-inner-profile-btn:hover {
+    color: #6504b5;
+}
+
+.header-inner-profile {
+    display: flex;
+    position: relative;
+}
+
+.header-inner-profile-btn {
+    padding: 0;
+    margin: 0;
+    width: 215px;
+    padding-left: 62px;
+    position: relative;
+}
+
+.header-inner-profile-btn>.fas {
+    display: block;
+    width: 22px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    bottom: 0;
+}
+
+.header-inner-profile-btn>span {
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+
+/*--------------------- Modal ------------------------ */
+
+.modal_bgColorPrimary {
+    background-color: #2e0152;
+}
+
+.modal-content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+
+.u-posTopRight {
+    position: absolute!important;
+    top: 0!important;
+    right: 0!important;
+    padding: 0px;
+    border-bottom: none;
+}
+
+.close,
+.close:hover {
+    opacity: 1;
+}
+
+.modal-closeBtn {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: url("https://www.petfinder.com/assets/www/media/svgs/ui/icon-close_colorPrimary.svg") no-repeat 50%;
+    background-size: 24px 24px;
+    text-indent: -9999px;
+}
+
+.login>* {
+    width: 50%;
+}
+
+.login-bd {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0px;
+}
+
+.login-ft {
+    order: -1;
+    margin: 0px;
+}
+
+.login-bd-inner,
+.login-ft-inner {
+    max-width: none;
+    margin: 0;
+    padding: 80px 60px 60px;
+}
+
+.login-ft-inner h3 {
+    margin-bottom: 25px;
+    display: block;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.list li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 10px 0;
+}
+
+.login-form {
+    margin-bottom: 25px;
+}
+
+.form-group {
+    display: block;
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 0px;
+}
+
+.field-label {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    pointer-events: none;
+}
+
+.field-input {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 22px 15px 2px;
+    background-color: #fff;
+    border: 1px solid #d2d1d3;
+    border-radius: 5px;
+    color: #6504b5;
+    font-size: 16px;
+    line-height: normal;
+    transition: border-color .15s;
+}
+
+.field-input:focus,
+.field-input:hover {
+    border-color: #6504b5;
+    outline: none;
+    box-shadow: none;
+}
+
+.login-form .btn,
+.register .btn,
+.register-form .btn,
+.buttonPet,
+.user-update-btn,
+.add-pet-btn,
+.update-pass-btn,
+.add-pet-btn:focus,
+.update-pass-btn:focus {
+    height: 45px;
+    max-width: 100%;
+    padding: 11px 30px;
+    border: 2px solid #6504b5;
+    border-radius: 23px;
+    background-color: #6504b5;
+    color: white;
+}
+
+.login-form .btn:hover,
+.register .btn:hover,
+.register-form .btn:hover,
+.user-update-btn:hover,
+.add-pet-btn:hover,
+.update-pass-btn:hover {
+    border-color: #2e0152;
+    background-color: #2e0152;
+    color: white;
+}
+
+.forgot_pass {
+    margin-bottom: 40px;
+}
+
+.forgot_pass a {
+    color: #6504b5;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.forgot_pass a:hover {
+    text-decoration: underline;
+    color: #2e0152;
+}
+
+.register {
+    padding-top: 40px;
+    border-top: 1px solid #d2d1d3;
+}
+
+.register-bd {
+    max-width: none;
+    margin: 0;
+    padding: 60px 40px;
+}
+
+.register-bd h2 {
+    margin-bottom: 30px;
+}
+
+.register-form .form-group,
+.register-form .register-button {
+    padding-left: 0px;
+}
+
+.login-form .form-group,
+.register {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.select-label {
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.select-select {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 55px;
+    padding: 8px 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff url("https://www.petfinder.com/assets/www/media/svgs/ui/icon-chevronDown_colorDark.svg") no-repeat right 20px center;
+    background-size: 14px 14px;
+    border: 1px solid #d2d1d3;
+    color: #6504b5;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: normal;
+    text-align: left;
+    overflow: hidden;
+    padding-top: 22px;
+    padding-bottom: 2px;
+    cursor: pointer;
+}
+
+.italic {
+    margin-bottom: 26px;
+    font-style: italic;
+}
+
+.modal-open .modal {
+    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+/*---------------- Main Title --------------------- */
+
+.flex-centar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.centar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title h1 {
+    margin-bottom: 5px;
+    line-height: 1.2;
+    font-size: 45px;
+    text-shadow: 0 1px 10px #4d4751, 0 0 4px #4d4751;
+}
+
+.main-title p {
+    font-size: 18px;
+    text-shadow: 0 1px 5px #4d4751, 0 0 2px #4d4751, 0 0 1px #4d4751;
+    margin-bottom: 20px;
+}
+
+.content {
+    margin: 0;
+    background-image: url('https://d17fnq9dkz9hgj.cloudfront.net/uploads/2017/06/why-are-dogs-scared-of-firework-header.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content a {
+    padding: 10px 30px 10px 30px;
+    border: 2px solid white;
+    color: white;
+}
+
+.search {
+    height: 16.12vh;
+    margin-top: -60px;
+    margin-bottom: 50px;
+}
+
+.findpet {
+    height: 100%;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.button {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #6504b5;
+    color: white;
+    border-radius: 0;
+    border-left: 1px solid #2e0152;
+    cursor: pointer;
+}
+
+.pet-search {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+    border-left: 1px solid #2e0152;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #3a0168;
+    color: white;
+}
+
+.findAPetMenu-locationInputContainer:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0.3%;
+    border-left: 25px solid #2e0152;
+    border-top: 58px solid transparent;
+    border-bottom: 58px solid transparent;
+}
+
+.last {
+    background: #2e0152;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.last:hover {
+    color: white;
+}
+
+.first {
+    background: #2e0152;
+    height: 100%;
+    width: 100%;
+    color: white;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.first:hover {
+    color: white;
+}
+
+.find_match {
+    border-radius: 35px;
+    border: 2px solid white;
+    font-weight: bold;
+    color: white;
+}
+
+.find_match a {
+    text-decoration: none;
+}
+
+.find_match:hover {
+    background-color: white;
+    color: #2e0152;
+    text-decoration: none;
+}
+
+#icon-cat {
+    width: 70px;
+}
+
+#icon-dog {
+    width: 70px;
+}
+
+
+/*---------------- Planning ---------------------- */
+
+.planning {
+    margin-top: 30px;
+    padding-bottom: 45px;
+    height: 100%;
+}
+
+.image {
+    background-image: url('../images/adult-animal-animal-lover-1378849.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.planning .title {
+    padding: 30px 0px;
+}
+
+.icons {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.icons h3 {
+    font-size: 22px;
+    color: #004c81;
+}
+
+.icons p {
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.icons a {
+    border: 2px solid #20ccf8;
+    border-radius: 20px;
+    color: #004c81;
+    padding: 10px;
+    width: 200px;
+}
+
+.icons a:hover {
+    background-color: #20ccf8;
+    color: white;
+}
+
+.slideanim {
+    margin-top: 40px;
+}
+
+
+/*----------- Carousel For Planning -------------*/
+
+.adoptCarousel .carousel-content {
+    padding: 30px 0px;
+}
+
+.adoptCarousel .carousel-content h3 {
+    color: #004c81;
+}
+
+.adoptCarousel .carousel-control.left,
+.adoptCarousel .carousel-control.right {
+    background-image: none !important;
+    filter: none !important;
+}
+
+.adoptCarousel .carousel-footer {
+    border-top: 1px solid #20ccf8;
+    margin-top: 20px;
+    color: #004c81;
+}
+
+.adoptCarousel .carousel-footer a {
+    padding: 20px;
+    color: #004c81;
+}
+
+.adoptCarousel .carousel-footer:active {
+    background-color: #20ccf8;
+    color: white;
+}
+
+.adoptCarousel .carousel-indicators li {
+    border-color: #004c81;
+    background-color: #004c81;
+}
+
+.adoptCarousel .carousel-control {
+    opacity: 1;
+}
+
+.adoptCarousel .carousel-control:hover {
+    opacity: 1;
+}
+
+.adoptCarousel .carousel-inner {
+    margin-bottom: 50px;
+}
+
+.adoptCarousel .carousel-control .glyphicon-chevron-right,
+.adoptCarousel .carousel-control .glyphicon-chevron-left {
+    margin-top: -115px;
+    color: #004c81;
+}
+
+.adoptCarousel .carousel-control .glyphicon-chevron-right {
+    margin-right: 15px;
+}
+
+.adoptCarousel .carousel-control .glyphicon-chevron-left {
+    margin-left: 15px;
+}
+
+
+/*------------------- Articles ----------------- */
+
+.dogCover {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+    position: relative;
+    -webkit-clip-path: polygon(100% 0, 100% 98%, 48% 93%, 48% 93%, 0 97%, 0% 0%);
+    clip-path: polygon(100% 0, 100% 98%, 48% 93%, 48% 93%, 0 97%, 0% 0%);
+}
+
+.panel-heading {
+    padding: 0px;
+    border-radius: 10px;
+}
+
+.panel {
+    border-radius: 10px;
+}
+
+.panel-default>.panel-heading {
+    border: none;
+    background-color: white;
+}
+
+.imagedog {
+    border: 6px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 181px;
+    z-index: 1;
+    left: calc(50% - 50px);
+}
+
+.dog-cover {
+    display: block;
+    height: 260px;
+    width: 100%;
+}
+
+.text {
+    margin-top: 50px;
+}
+
+.panel-footer a {
+    color: black;
+}
+
+.panel-footer {
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.panel-footer:hover {
+    outline: none;
+    box-shadow: none;
+    background-color: #6504b5;
+    color: white;
+}
+
+
+/*----------------------- Footer --------------------------- */
+
+.footer {
+    padding: 40px;
+    display: flex;
+}
+
+.footer-inner {
+    margin-left: 90px;
+}
+
+.footer-inner-nav-item {
+    position: relative;
+}
+
+.footer-inner-nav {
+    list-style: none;
+    padding-inline-start: 0px;
+}
+
+.footer-inner a {
+    color: white;
+}
+
+.footer-inner a:hover {
+    text-decoration: underline;
+}
+
+.newsletter-signup input {
+    margin-top: 30px;
+    padding: 10px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.newsletter-signup span.icon {
+    font-size: 1.1em;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    padding: 10px 20px;
+    border-left: 1px solid #d2d1d3;
+}
+
+.subFooter {
+    background-color: #2e0152;
+    color: #ddb4ff;
+}
+
+.subFooter-inner {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 70px;
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+.subFooter-inner-text {
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+.subFooter-inner-social a {
+    color: #ddb4ff;
+}
+
+.subFooter-inner-social .fab {
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+/* ---------------------- User Profile ------------------------- */
+
+.aboutMeForm {
+    background-color: white;
+}
+
+.nav-tabs {
+    padding-inline-start: 0px;
+}
+
+.nav-tabs li a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile {
+    margin-bottom: 30px;
+    color: #6504b5;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    background-color: #EFEDF1;
+    background-color: white;
+    border: 2px solid #EFEDF1;
+    border: 2px solid white;
+    border-bottom-color: #410078;
+}
+
+.glyphicon {
+    line-height: unset;
+}
+
+.user-profile,
+.added-pet {
+    padding-top: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 0px;
+}
+
+.profile-header>* {
+    padding: 0px;
+}
+
+.profile-main {
+    margin-bottom: 30px;
+    padding: 40px 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(77, 71, 81, .2);
+    background-color: #fff;
+}
+
+#MyForm {
+    display: none;
+    padding: 14px;
+    background-color: white;
+    margin-top: 35px;
+}
+
+.fieldset-title {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-left: 0px;
+}
+
+.fieldset-title a {
+    color: #6504b5;
+    text-decoration: underline;
+}
+
+.fieldset .form-group {
+    margin-bottom: 35px;
+}
+
+.fieldser-pet {
+    margin-top: 35px;
+}
+
+.change-email a {
+    color: #6504b5;
+}
+
+.fieldset-change-pass .fieldset-title {
+    margin-top: 35px;
+}
+
+.glyphicon-chevron-right {
+    float: right;
+}
+
+.fieldset-searches a {
+    color: #6504b5;
+}
+
+.user-dropdown {
+    background-color: #410078;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 30px 0 30px 65px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.user-dropdown a {
+    color: white;
+}
+
+#emailForm {
+    display: none;
+}
+
+.added-pet-main {
+    padding: 40px 30px;
+    background-color: #EFEDF1;
+}
+
+.delete-pet {
+    margin-top: 5px;
+}
+
+.delete-pet .fas,
+.delete-pet a {
+    color: rgba(255, 0, 0, 0.644);
+}
+
+
+/*----------- User Profile Mobile Menu ------------------ */
+
+.user-profile-menu {
+    height: 55px;
+    padding: 0px 15px;
+    background-color: #fff;
+    border: 1px solid #d2d1d3;
+    border-radius: 5px;
+    color: #6504b5;
+}
+
+.user-profile-dropdown {
+    width: 100%;
+    margin: 0px;
+    background-color: #fff;
+    border: 1px solid #d2d1d3;
+}
+
+.user-profile-dropdown>li>a {
+    color: #6504b5;
+}
+
+.user-profile-dropdown>.active>a {
+    color: white;
+    background-color: #6504b5;
+}
+
+
+/*--------------- Pet Profile ---------------- */
+
+.petCarousel {
+    padding: 0px;
+    background-color: black;
+}
+
+.petCarousel-body img {
+    width: auto;
+    height: 350px !important;
+    max-height: 350px !important;
+}
+
+.petCarousel .carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next,
+.carousel-control .icon-prev {
+    margin-top: -30px;
+    color: white;
+}
+
+.petProfile-main {
+    margin-top: 40px;
+}
+
+.petInfo {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 30px 20px;
+}
+
+.askAbout {
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.askAbout-body {
+    padding: 30px;
+}
+
+.askAbout .btn {
+    border-color: #fff;
+    background-color: #fff;
+    color: #6504b5;
+    box-sizing: border-box;
+    height: 45px;
+    max-width: 100%;
+    padding: 11px 30px;
+    border-radius: 23px;
+}
+
+.askAbout a {
+    color: purple;
+}
+
+.askAbout-footer {
+    align-items: stretch;
+    border-top: 1px solid #2e0152;
+}
+
+.btn-share-pet:first-child {
+    border-right: 1px solid #2e0152;
+}
+
+.btn-share-pet {
+    fill: #fff;
+    color: #fff;
+    text-align: center;
+    min-height: 55px;
+    padding: 10px 65px;
+    cursor: pointer;
+}
+
+#ask_about_pet {
+    margin-top: 30px;
+}
+
+.AskAboutPet {
+    padding: 15px 0px;
+}
+
+.desc-pet {
+    display: flex;
+}
+
+.coath {
+    margin-left: 40px;
+}
+
+.sendMessage {
+    padding-top: 40px;
+}
+
+.SignIn {
+    padding-top: 30px;
+    padding: 0px;
+}
+
+.SignIn a {
+    color: #6504b5;
+}
+
+.GuestForm {
+    margin-bottom: 15px;
+    height: 46px;
+    padding: 0px 14px;
+}
+
+.messageBtn {
+    border-color: #fff;
+    background-color: #6504b5;
+    color: white;
+    box-sizing: border-box;
+    height: 45px;
+    max-width: 100%;
+    padding: 11px 30px;
+    border-radius: 23px;
+    margin-top: 10px;
+}
+
+.fa-arrow-alt-circle-right {
+    color: #6504b5;
+}
+
+.image_dog {
+    border: 6px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.dogImageBellow {
+    padding: 20px 100px;
+}
+
+.image_dog_bellow {
+    border-radius: 50px;
+    width: 76px;
+    height: 78px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    margin: 5px 0;
+}
+
+.petProfileUl {
+    display: flex;
+    justify-content: space-around;
+    padding-inline-start: 0px;
+}
+
+.shareBellow .fas {
+    border: 1px solid #6504b5;
+    background-color: #6504b5;
+    color: white;
+    border-radius: 50px;
+    padding: 14px;
+}
+
+
+/* ----------------- Search -------------------- */
+
+.animalSearchHeader {
+    margin-bottom: 30px;
+    height: 70px;
+    display: block;
+    padding: 0 60px;
+    box-shadow: 0 1px 3px rgba(77, 71, 81, .2);
+}
+
+.countPetsDiv {
+    border-right: 1px solid #2e0152;
+    height: 70px;
+}
+
+.countPetsDiv p {
+    margin-top: 22px;
+}
+
+.countPetsDiv input {
+    border: none;
+    border-radius: 0px;
+    background-color: #6504b5;
+    color: white;
+}
+
+.countPetsDiv input::placeholder {
+    color: white;
+}
+
+.available_pets {
+    background-color: #6504b5;
+}
+
+#search_type {
+    margin-top: 12px;
+    background: transparent;
+    color: white;
+    border: none;
+}
+
+#search_type option {
+    color: #1b1e21;
+}
+
+.pet_cards_row {
+    min-height: 300px;
+    margin-bottom: 30px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+}
+
+.bubble_pet {
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #2e0152;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 5px;
+}
